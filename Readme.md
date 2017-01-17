@@ -8,6 +8,8 @@ urxt
 zsh
 Panel:
 tint2
+Fonts:
+Powerline fonts for zsh
 
 
 In bash-folder config files:

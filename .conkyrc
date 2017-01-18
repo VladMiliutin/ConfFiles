@@ -210,6 +210,8 @@ TEXT
 $nodename - $sysname $kernel on $machine
 $stippled_hr
 ${color lightgrey}Uptime:$color $uptime ${color lightgrey}- Load:$color $loadavg
+${color white}Brightness:$color ${exec xbacklight}
+${color white}Volume:$color ${exec sh .getVolume.sh}
 ${color lightgrey}CPU Usage:${color #5000a0} ${cpu}% ${cpubar}
 ${color black}${cpugraph 000000 5000a0}
 ${color lightgrey}RAM Usage:$color $mem/$memmax - $memperc% $membar
@@ -217,8 +219,8 @@ ${color lightgrey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
 ${color lightgrey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 $color$stippled_hr
 ${color lightgrey}Networking:
- Down:${color #8844ee} ${downspeed eth0} k/s${color lightgrey} ${offset 70}Up:${color #22ccff} ${upspeed eth0} k/s
- ${color black}${downspeedgraph eth0 32,150 ff0000 0000ff} $alignr${color black}${upspeedgraph eth0 32,150 0000ff ff0000}
+ Down:${color #8844ee} ${downspeed wlp7s0} k/s${color lightgrey} ${offset 70}Up:${color #22ccff} ${upspeed wlp7s0} k/s
+ ${color black}${downspeedgraph wlp7s0 32,150 ff0000 0000ff} $alignr${color black}${upspeedgraph wlp7s0 32,150 0000ff ff0000}
  ${color lightgrey}File systems:
   / $color${fs_used /}/${fs_size /} ${fs_bar /}
   ${color lightgrey}Temperatures:

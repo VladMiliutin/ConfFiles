@@ -26,12 +26,18 @@ tint2 &
 fbxkb &
 #KeyboardLayout
 setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll us,ua,ru
-#Start audio
-pulseaudio &
 #comp...
 xcompmgr &
 #conky
-conky &
+#conky &
+#Screenblur or what?)
+#redshift &
 #Wallpaper
+#wallch &
 nitrogen --restore &
+#feh --radnomize --bg-fill /home/vlad9pa/Pictures/*
+#Start pulseaudio
+pulseaudio &
+#Start tray icon for pulseaudio
+pasystray
 

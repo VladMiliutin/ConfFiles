@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
-	<menu id="apps-accessories-menu" label="Accessories">
+	<menu id="None-341935" label="New Menu">
+		<item label="New Item">
+			<action name="Execute">
+				<execute>command</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-multimedia-menu" label="Multimedia">
+		<item label="Amarok">
+			<action name="Execute">
+				<execute>amarok</execute>
+			</action>
+		</item>
 	</menu>
 	<menu id="apps-editors-menu" label="Editors">
 		<item label="GEdit">
@@ -13,25 +25,14 @@
 		</item>
 	</menu>
 	<menu id="apps-term-menu" label="Terminals">
+		<item label="Sakura">
+			<action name="Execute">
+				<execute>sakura</execute>
+			</action>
+		</item>
 		<item label="Rxvt Unicode">
 			<action name="Execute">
 				<command>urxvt</command>
-			</action>
-		</item>
-		<item label="Xfce Terminal">
-			<action name="Execute">
-				<command>xfce4-terminal</command>
-				<startupnotify>
-					<enabled>yes</enabled>
-				</startupnotify>
-			</action>
-		</item>
-		<item label="Konsole">
-			<action name="Execute">
-				<command>konsole</command>
-				<startupnotify>
-					<enabled>yes</enabled>
-				</startupnotify>
 			</action>
 		</item>
 	</menu>
@@ -48,7 +49,12 @@
 	</menu>
 	<menu id="apps-office-menu" label="Office">
 	</menu>
-	<menu id="apps-multimedia-menu" label="Multimedia">
+	<menu id="apps-accessories-menu" label="Accessories">
+		<item label="Change Wallpapper">
+			<action name="Execute">
+				<execute>/home/vlad9pa/bin/wallchanger.sh</execute>
+			</action>
+		</item>
 	</menu>
 	<menu id="apps-fileman-menu" label="File Managers">
 		<item label="Thunar">
